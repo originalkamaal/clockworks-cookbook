@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "717332727748",
+    "project_id": "cookbook-2a708",
+    "storage_bucket": "cookbook-2a708.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717332727748:android:a4a972eed25b698a2d4691",
+        "android_client_info": {
+          "package_name": "com.clockworks.clockworks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjFsDfg-ReInUDNU-og5sIpBEokRhBuPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
