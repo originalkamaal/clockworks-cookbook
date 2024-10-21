@@ -15,7 +15,7 @@ class Ingredient {
       name: json['name'],
       unit: json['unit'],
       image: json['image'],
-      quantity: json['quantity'],
+      quantity: double.tryParse(json['quantity'].toString()),
     );
   }
 
