@@ -17,19 +17,13 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -59,4 +53,23 @@ class DefaultFirebaseOptions {
     projectId: 'cookbook-2a708',
     storageBucket: 'cookbook-2a708.appspot.com',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyBkwKUhq2lJIk1CmglqeIzFqawJI1-DX-0',
+    appId: '1:717332727748:web:9aece9bf8ec29a9f2d4691',
+    messagingSenderId: '717332727748',
+    projectId: 'cookbook-2a708',
+    authDomain: 'cookbook-2a708.firebaseapp.com',
+    storageBucket: 'cookbook-2a708.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyAoUe13ax6JWQ0SwEu4dweexs5zoaJlcb8',
+    appId: '1:717332727748:ios:b97ab4f2e5d0f38f2d4691',
+    messagingSenderId: '717332727748',
+    projectId: 'cookbook-2a708',
+    storageBucket: 'cookbook-2a708.appspot.com',
+    iosBundleId: 'com.clockworks.cookbook',
+  );
+
 }
